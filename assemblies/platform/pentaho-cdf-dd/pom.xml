@@ -3,16 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.pentaho.ctools</groupId>
+    <groupId>org.tahopen.ctools</groupId>
     <artifactId>cde-plugin-assemblies-platform</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>pentaho-cdf-dd</artifactId>
+  <artifactId>tahopen-cdf-dd</artifactId>
   <packaging>pom</packaging>
-  <description>Pentaho Community Dashboard Editor plugin for the Platform Server</description>
+  <description>Tahopen Community Dashboard Editor plugin for the Platform Server</description>
   <properties>
     <js.project.list>
-      cde-components-platform,cde-webclient-impls-core,cde-webclient-impls-pentaho,jquery
+      cde-components-platform,cde-webclient-impls-core,cde-webclient-impls-tahopen,jquery
     </js.project.list>
     <webjars.target.directory>${build.dependenciesDirectory}/META-INF/resources/webjars</webjars.target.directory>
     <ant-contrib.version>1.0b3</ant-contrib.version>
@@ -23,7 +23,7 @@
       <artifactId>jquery</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
+      <groupId>org.tahopen.ctools</groupId>
       <artifactId>cde-components-platform</artifactId>
       <version>${project.version}</version>
       <type>zip</type>
@@ -35,7 +35,7 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
+      <groupId>org.tahopen.ctools</groupId>
       <artifactId>cde-webclient-impls-core</artifactId>
       <version>${project.version}</version>
       <type>zip</type>
@@ -46,8 +46,8 @@
         </exclusion>
       </exclusions>
     </dependency><dependency>
-    <groupId>org.pentaho.ctools</groupId>
-    <artifactId>cde-webclient-impls-pentaho</artifactId>
+    <groupId>org.tahopen.ctools</groupId>
+    <artifactId>cde-webclient-impls-tahopen</artifactId>
     <version>${project.version}</version>
     <type>zip</type>
     <exclusions>
@@ -58,15 +58,15 @@
     </exclusions>
   </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>cpf-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>cpf-pentaho</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>cpf-tahopen</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
+      <groupId>org.tahopen.ctools</groupId>
       <artifactId>cde-core-impl</artifactId>
       <version>${project.version}</version>
       <scope>runtime</scope>
@@ -78,8 +78,8 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
-      <artifactId>cde-pentaho-impl</artifactId>
+      <groupId>org.tahopen.ctools</groupId>
+      <artifactId>cde-tahopen-impl</artifactId>
       <version>${project.version}</version>
       <scope>runtime</scope>
       <exclusions>

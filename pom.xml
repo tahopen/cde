@@ -4,15 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.pentaho</groupId>
-    <artifactId>pentaho-ce-bundle-parent-pom</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <groupId>org.tahopen</groupId>
+    <artifactId>tahopen-ce-bundle-parent-pom</artifactId>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.pentaho.ctools</groupId>
+  <groupId>org.tahopen.ctools</groupId>
   <artifactId>cde-plugin</artifactId>
   <packaging>pom</packaging>
-  <description>Pentaho Community Dashboard Editor</description>
+  <description>Tahopen Community Dashboard Editor</description>
 
   <modules>
     <module>core</module>
@@ -25,31 +25,17 @@
     <module>assemblies</module>
   </modules>
 
-  <scm>
-    <connection>scm:git:git@github.com:webdetails/${project.artifactId}.git</connection>
-    <developerConnection>scm:git:git@github.com:webdetails/${project.artifactId}.git</developerConnection>
-    <url>scm:git:git@github.com:webdetails/${project.artifactId}.git</url>
-  </scm>
-
-  <distributionManagement>
-    <site>
-      <id>pentaho.public.snapshot.repo</id>
-      <name>${project.artifactId}-${project.version}</name>
-      <url>dav:${site.publish.url}/${project.groupId}/cde-plugin-${project.version}</url>
-    </site>
-  </distributionManagement>
-
   <properties>
     <project.stage>master</project.stage>
     <project.github-name>cde</project.github-name>
     <global.require.file>cde-require-js-cfg.js</global.require.file>
     <requirejs.config.files.pattern>**/*-require-js-cfg.js</requirejs.config.files.pattern>
 
-    <pentaho-cdf-plugin.version>10.1.0.0-SNAPSHOT</pentaho-cdf-plugin.version>
-    <pentaho-cpf-plugin.version>10.1.0.0-SNAPSHOT</pentaho-cpf-plugin.version>
-    <pentaho-json.version>10.1.0.0-SNAPSHOT</pentaho-json.version>
-    <mondrian.version>10.1.0.0-SNAPSHOT</mondrian.version>
-    <platform.version>10.1.0.0-SNAPSHOT</platform.version>
+    <pentaho-cdf-plugin.version>0.1.0.0-SNAPSHOT</pentaho-cdf-plugin.version>
+    <pentaho-cpf-plugin.version>0.1.0.0-SNAPSHOT</pentaho-cpf-plugin.version>
+    <pentaho-json.version>0.1.0.0-SNAPSHOT</pentaho-json.version>
+    <mondrian.version>0.1.0.0-SNAPSHOT</mondrian.version>
+    <platform.version>0.1.0.0-SNAPSHOT</platform.version>
 
     <commons-io.version>1.4</commons-io.version>
     <commons-lang.version>2.6</commons-lang.version>
@@ -79,7 +65,7 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>cpf-core</artifactId>
         <version>${pentaho-cpf-plugin.version}</version>
         <exclusions>
@@ -90,8 +76,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>cpf-pentaho</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>cpf-tahopen</artifactId>
         <version>${pentaho-cpf-plugin.version}</version>
         <exclusions>
           <exclusion>
@@ -101,7 +87,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.ctools</groupId>
+        <groupId>org.tahopen.ctools</groupId>
         <artifactId>cpf-osgi</artifactId>
         <version>${pentaho-cpf-plugin.version}</version>
         <exclusions>
@@ -189,7 +175,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>json</artifactId>
         <version>${pentaho-json.version}</version>
         <exclusions>
@@ -245,8 +231,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-platform-api</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-platform-api</artifactId>
         <version>${platform.version}</version>
         <exclusions>
           <exclusion>
@@ -256,8 +242,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-platform-core</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-platform-core</artifactId>
         <version>${platform.version}</version>
         <exclusions>
           <exclusion>
@@ -267,8 +253,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-platform-repository</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-platform-repository</artifactId>
         <version>${platform.version}</version>
         <exclusions>
           <exclusion>
@@ -278,8 +264,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-platform-extensions</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-platform-extensions</artifactId>
         <version>${platform.version}</version>
         <exclusions>
           <exclusion>
@@ -289,8 +275,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>mondrian</artifactId>
+        <groupId>or.tahopen</groupId>
+        <artifactId>drianmon</artifactId>
         <version>${mondrian.version}</version>
         <exclusions>
           <exclusion>
@@ -319,8 +305,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-cdf-js</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-cdf-js</artifactId>
         <version>${pentaho-cdf-plugin.version}</version>
         <type>zip</type>
         <exclusions>
@@ -384,35 +370,5 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
-  <repositories>
-    <repository>
-      <id>pentaho-public</id>
-      <name>Pentaho Public</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>interval:15</updatePolicy>
-      </snapshots>
-    </repository>
-  </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>pentaho-public-plugins</id>
-      <name>Pentaho Public Plugins</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </pluginRepository>
-  </pluginRepositories>
 
 </project>

@@ -5,9 +5,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.pentaho.ctools</groupId>
+    <groupId>org.tahopen.ctools</groupId>
     <artifactId>cde-renderer-assembly</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>cde-renderer-karaf-assembly</artifactId>
@@ -38,8 +38,8 @@
     </dependency>
 
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
-      <artifactId>pentaho-cde-renderer</artifactId>
+      <groupId>org.tahopen.ctools</groupId>
+      <artifactId>tahopen-cde-renderer</artifactId>
       <version>${project.version}</version>
       <classifier>features</classifier>
       <type>xml</type>
@@ -65,7 +65,7 @@
             <feature>standard</feature>
             <feature>ssh</feature>
 
-            <feature>pentaho-cde-renderer</feature>
+            <feature>tahopen-cde-renderer</feature>
           </bootFeatures>
 
           <!-- no installedFeatures -->

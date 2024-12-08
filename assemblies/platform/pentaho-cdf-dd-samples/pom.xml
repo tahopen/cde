@@ -3,11 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.pentaho.ctools</groupId>
+    <groupId>org.tahopen.ctools</groupId>
     <artifactId>cde-plugin-assemblies-platform</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>pentaho-cdf-dd-samples</artifactId>
+  <artifactId>tahopen-cdf-dd-samples</artifactId>
   <packaging>pom</packaging>
-  <description>Pentaho Community Dashboard Editor plugin samples for the Platform Server</description>
+  <description>Tahopen Community Dashboard Editor plugin samples for the Platform Server</description>
 </project>

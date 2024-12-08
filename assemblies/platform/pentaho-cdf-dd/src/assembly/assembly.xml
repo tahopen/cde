@@ -1,0 +1,69 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3 http://maven.apache.org/xsd/assembly-1.1.3.xsd">
+  <id>pentaho-cdf-dd</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+
+  <includeBaseDirectory>false</includeBaseDirectory>
+
+  <fileSets>
+    <!-- resources -->
+    <fileSet>
+      <directory>${project.build.directory}/classes</directory>
+      <outputDirectory>pentaho-cdf-dd</outputDirectory>
+      <excludes>
+        <exclude>editor.includes.core.properties</exclude>
+        <exclude>editor.includes.pentaho.properties</exclude>
+      </excludes>
+    </fileSet>
+    <!-- webclient -->
+    <fileSet>
+      <directory>${project.build.directory}/dependency/cde/webclient</directory>
+      <outputDirectory>pentaho-cdf-dd/js</outputDirectory>
+    </fileSet>
+    <!-- Components -->
+    <fileSet>
+      <directory>${project.build.directory}/dependency/cde/components</directory>
+      <outputDirectory>pentaho-cdf-dd/resources/components</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>${project.build.directory}/dependency/cde/components-compressed</directory>
+      <outputDirectory>pentaho-cdf-dd/resources/components-compressed</outputDirectory>
+      <excludes>
+        <exclude>*.xml</exclude>
+      </excludes>
+    </fileSet>
+    <!-- Component Properties -->
+    <fileSet>
+      <directory>${project.build.directory}/dependency/cde/properties</directory>
+      <outputDirectory>pentaho-cdf-dd/resources/properties</outputDirectory>
+    </fileSet>
+  </fileSets>
+
+
+  <files>
+    <!-- Components client-side RequireJS configuration file -->
+    <file>
+      <source>${project.build.directory}/dependency/cde/${global.require.file}</source>
+      <destName>pentaho-cdf-dd/js/${global.require.file}</destName>
+    </file>
+
+    <file>
+      <outputDirectory>/pentaho-cdf-dd/resources/ace/</outputDirectory>
+      <source>${webjars.target.directory}/jquery/${jquery.version}/dist/jquery.min.js</source>
+    </file>
+  </files>
+
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>pentaho-cdf-dd/lib</outputDirectory>
+      <scope>runtime</scope>
+      <useTransitiveDependencies>false</useTransitiveDependencies>
+      <excludes>
+        <exclude>*:zip</exclude>
+      </excludes>
+    </dependencySet>
+  </dependencySets>
+</assembly>

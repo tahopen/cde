@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.pentaho.ctools</groupId>
+    <artifactId>cde-plugin-assemblies</artifactId>
+    <version>10.1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>cde-renderer-assembly</artifactId>
+
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>feature</module>
+    <module>karaf</module>
+    <module>docker</module>
+    <module>solr</module>
+
+  </modules>
+
+  <properties>
+    <assembly.tarLongFileMode>posix</assembly.tarLongFileMode>
+
+    <pentaho-osgi-bundles.version>10.1.0.0-SNAPSHOT</pentaho-osgi-bundles.version>
+    <common-ui.version>10.1.0.0-SNAPSHOT</common-ui.version>
+  </properties>
+
+</project>

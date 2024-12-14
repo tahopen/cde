@@ -4,35 +4,35 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.pentaho.ctools</groupId>
+    <groupId>org.tahopen.ctools</groupId>
     <artifactId>cde-components-assemblies</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>cde-components-platform</artifactId>
-  <description>Pentaho Community Dashboard Editor Components for the Pentaho platform server</description>
+  <description>Tahopen Community Dashboard Editor Components for the Pentaho platform server</description>
   <packaging>pom</packaging>
 
   <properties>
-    <js.project.list>pentaho-cdf-js,cde-components-impls-core,cde-components-impls-pentaho</js.project.list>
+    <js.project.list>tahopen-cdf-js,cde-components-impls-core,cde-components-impls-tahopen</js.project.list>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
+      <groupId>org.tahopen.ctools</groupId>
       <artifactId>cde-components-impls-core</artifactId>
       <version>${project.version}</version>
       <type>zip</type>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
+      <groupId>org.tahopen.ctools</groupId>
       <artifactId>cde-components-impls-pentaho</artifactId>
       <version>${project.version}</version>
       <type>zip</type>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-cdf-js</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-cdf-js</artifactId>
       <type>zip</type>
       <scope>provided</scope>
     </dependency>

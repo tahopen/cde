@@ -3,20 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.pentaho.ctools</groupId>
+    <groupId>org.tahopen.ctools</groupId>
     <artifactId>cde-components-impls</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>cde-components-impls-core</artifactId>
   <packaging>pom</packaging>
-  <description>Pentaho Community Dashboard Editor Core Components</description>
+  <description>Tahopen Community Dashboard Editor Core Components</description>
   <properties>
     <js.project.list>pentaho-cdf-js</js.project.list>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-cdf-js</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-cdf-js</artifactId>
       <type>zip</type>
       <scope>test</scope>
     </dependency>

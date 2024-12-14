@@ -4,25 +4,25 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.pentaho.ctools</groupId>
-    <artifactId>cde-pentaho</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <groupId>org.tahopen.ctools</groupId>
+    <artifactId>cde-tahopen</artifactId>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>cde-pentaho-impl</artifactId>
-  <description>Pentaho Community Dashboard Editor Pentaho Server Implementation</description>
+  <artifactId>cde-tahopen-impl</artifactId>
+  <description>Tahopen Community Dashboard Editor Tahopen Server Implementation</description>
 
   <dependencies>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>cpf-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>cpf-pentaho</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>cpf-tahopen</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
+      <groupId>org.tahopen.ctools</groupId>
       <artifactId>cde-core-impl</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -48,7 +48,7 @@
       <artifactId>dom4j</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>json</artifactId>
     </dependency>
     <dependency>
@@ -69,23 +69,23 @@
     </dependency>
 
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-platform-api</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-platform-api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-platform-core</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-platform-core</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-platform-repository</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-platform-repository</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-platform-extensions</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-platform-extensions</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -99,8 +99,8 @@
       <artifactId>ehcache-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>mondrian</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>drianmon</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>

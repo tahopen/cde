@@ -101,6 +101,7 @@
     <dependency>
       <groupId>org.tahopen</groupId>
       <artifactId>drianmon</artifactId>
+      <version>0.1.0.0-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
     <dependency>

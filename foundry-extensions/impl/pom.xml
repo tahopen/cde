@@ -4,32 +4,32 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>cde-foundry-extensions</artifactId>
-    <groupId>org.pentaho.ctools</groupId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <groupId>org.tahopen.ctools</groupId>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>cde-foundry-extensions-impl</artifactId>
-  <version>10.1.0.0-SNAPSHOT</version>
+  <version>0.1.0.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
-  <description>Pentaho Community Dashboard Editor Foundry Extensions Implementation</description>
+  <description>Tahopen Community Dashboard Editor Foundry Extensions Implementation</description>
   <dependencies>
     <dependency>
-      <groupId>pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>cpf-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>cpf-pentaho-rca</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>cpf-tahopen-rca</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
+      <groupId>org.tahopen.ctools</groupId>
       <artifactId>cde-core-impl</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.pentaho.ctools</groupId>
-      <artifactId>cde-pentaho-impl</artifactId>
+      <groupId>org.tahopen.ctools</groupId>
+      <artifactId>cde-tahopen-impl</artifactId>
       <version>${project.version}</version>
     </dependency>
 
@@ -43,7 +43,7 @@
       <artifactId>javax.ws.rs-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.pentaho</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>json</artifactId>
     </dependency>
 
@@ -64,8 +64,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-platform-api</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-platform-api</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>

@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>cde-plugin</artifactId>
-    <groupId>org.pentaho.ctools</groupId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <groupId>org.tahopen.ctools</groupId>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>cde-foundry-extensions</artifactId>
-  <version>10.1.0.0-SNAPSHOT</version>
+  <version>0.1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <description>Pentaho Community Dashboard Editor specifics intended to be available on a Foundry environment</description>
+  <description>Tahopen Community Dashboard Editor specifics intended to be available on a Foundry environment</description>
   <modules>
     <module>impl</module>
   </modules>

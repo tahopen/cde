@@ -7,7 +7,7 @@
     <artifactId>cde-webclient-impls</artifactId>
     <version>0.1.0.0-SNAPSHOT</version>
   </parent>
-  <artifactId>cde-webclient-impls-pentaho</artifactId>
+  <artifactId>cde-webclient-impls-tahopen</artifactId>
   <packaging>pom</packaging>
   <description>Tahopen Community Dashboard Editor Webclient Tahopen Server Implementation</description>
   <properties>
